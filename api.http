@@ -23,3 +23,9 @@ Accept: application/json
     "email": "prueba@prueba.com",
     "password": "Grp$4cFqas789"
 }
+
+
+### products
+# @name products
+GET {{ baseUrl }}/products HTTP/1.1
+Accept: application/json

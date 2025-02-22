@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\API\AuthController;
+use App\Http\Controllers\API\ProductController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -12,6 +13,9 @@ Route::prefix('auth')->group(function(){
     });
 });
 
-/* //Rutas para endpoints que requieren autenticación: logaut, welcome
-Route::middleware('auth:sanctum')->post('/logout', [AuthController::class, 'logout']);
-Route::middleware('auth:sanctum')->get('/welcome', [AuthController::class, 'welcome']); */
+// Rutas para productos
+Route::prefix('products')->middleware('auth:sanctum')->group(function () {
+    Route::controller(ProductController::class)->group(function () {
+        Route::get('/', 'index');  // Lista todos los productos
+    });
+});
