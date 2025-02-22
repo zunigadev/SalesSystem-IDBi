@@ -75,7 +75,7 @@ Se utilizó la estrategia **Git Flow** para la organización del código:
 Puedes ver la demostración del proyecto en el siguiente enlace:
 
 [👉 Ver Video de la Demostración](#)
-
+https://drive.google.com/drive/folders/1IZ4jZPE_E4KchtY2uv20fXIzu2bgUtFp?usp=drive_link
 ---
 
 ## 📝 **6. Instalación y Ejecución**
@@ -124,7 +124,5 @@ Aunque se avanzó significativamente en la funcionalidad, quedan pendientes:
 
 ---
 
-## 📬 **8. Contacto**
 
-Si tienes preguntas o deseas más detalles, no dudes en contactarme.
 
