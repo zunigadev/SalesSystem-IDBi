@@ -19,7 +19,7 @@ En este proyecto se priorizó la implementación de un sistema seguro de autenti
 
 El proyecto fue desarrollado con el siguiente stack tecnológico:
 
-- **Framework/Lenguaje:** PHP 8.2 / Laravel 10
+- **Framework/Lenguaje:** PHP 8.2 / Laravel 11
 - **Base de datos:** MySQL 8.0
 - **Servidor web:** Nginx
 - **Control de versiones:** Git (flujo de trabajo con Git Flow)
