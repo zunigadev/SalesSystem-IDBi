@@ -1,4 +1,5 @@
 @baseUrl = http://localhost:8000/api
+@token = 6|cOWtUrZzxRFIH3nm0i1g6AOpJstlflk6TLz1Qg07046d1b7a
 
 ### Register
 # @name register
@@ -29,3 +30,4 @@ Accept: application/json
 # @name products
 GET {{ baseUrl }}/products HTTP/1.1
 Accept: application/json
+Authorization: Bearer {{token}}
