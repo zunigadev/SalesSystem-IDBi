@@ -5,7 +5,7 @@ use App\Http\Controllers\API\ProductController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-         
+//Routes for authentication
 Route::prefix('auth')->group(function(){
     Route::controller(AuthController::class)->group(function(){
         Route::post('register', 'register');
@@ -13,9 +13,14 @@ Route::prefix('auth')->group(function(){
     });
 });
 
-// Rutas para productos
+// Route for logout
+Route::middleware('auth:sanctum')->post('auth/logout', [AuthController::class, 'logout']);
+
+
+// Routes for products
 Route::prefix('products')->middleware('auth:sanctum')->group(function () {
     Route::controller(ProductController::class)->group(function () {
-        Route::get('/', 'index');  // Lista todos los productos
+        Route::get('/', 'index');  
+        Route::post('/', 'store');
     });
 });

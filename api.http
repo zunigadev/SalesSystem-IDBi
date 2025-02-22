@@ -13,7 +13,6 @@ Accept: application/json
     "name": "test2"
 }
 
-
 ### Login   
 # @name Login
 POST {{ baseUrl }}/auth/login HTTP/1.1
@@ -25,9 +24,29 @@ Accept: application/json
     "password": "Grp$4cFqas789"
 }
 
+### Logout
+# @name logout
+POST {{ baseUrl }}/auth/logout  HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
 
-### products
-# @name products
+### List products
+# @name listProducts
 GET {{ baseUrl }}/products HTTP/1.1
 Accept: application/json
 Authorization: Bearer {{token}}
+
+### Create product
+# @name createProduct
+POST {{ baseUrl }}/products HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+    "SKU": "PROD008",
+    "productName": "Laptop Asus Rog",
+    "unitPrice": 8501.99,
+    "stock": 21
+}
