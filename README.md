@@ -55,8 +55,10 @@ Se desarrolló un CRUD completo para la gestión de productos con los siguientes
 - Validación de datos a nivel de aplicación y base de datos.
 
 ---
-
-## 🔄 **4. Flujo de Trabajo con Git Flow**
+## 🚀 **4. Diagrama Entidad Relacion**
+![image](https://github.com/user-attachments/assets/37e155ea-ed47-49eb-aa87-bec93207a9b5)
+---
+## 🔄 **5. Flujo de Trabajo con Git Flow**
 
 Se utilizó la estrategia **Git Flow** para la organización del código:
 
