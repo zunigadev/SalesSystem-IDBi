@@ -1,0 +1,52 @@
+@baseUrl = http://localhost:8000/api
+@token = 6|cOWtUrZzxRFIH3nm0i1g6AOpJstlflk6TLz1Qg07046d1b7a
+
+### Register
+# @name register
+POST {{ baseUrl }}/auth/register HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "prueba2@prueba.com",
+    "password": "Grp$4cFqas789",
+    "name": "test2"
+}
+
+### Login   
+# @name Login
+POST {{ baseUrl }}/auth/login HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "prueba@prueba.com",
+    "password": "Grp$4cFqas789"
+}
+
+### Logout
+# @name logout
+POST {{ baseUrl }}/auth/logout  HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+### List products
+# @name listProducts
+GET {{ baseUrl }}/products HTTP/1.1
+Accept: application/json
+Authorization: Bearer {{token}}
+
+### Create product
+# @name createProduct
+POST {{ baseUrl }}/products HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+    "SKU": "PROD008",
+    "productName": "Laptop Asus Rog",
+    "unitPrice": 8501.99,
+    "stock": 21
+}
