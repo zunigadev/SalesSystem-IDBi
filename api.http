@@ -1,5 +1,5 @@
 @baseUrl = http://localhost:8000/api
-@token = 6|cOWtUrZzxRFIH3nm0i1g6AOpJstlflk6TLz1Qg07046d1b7a
+@token = 10|z7PqLISJak0oSuSmHgzPB8pkvC0GEDCAmWa8em45c7030ebd
 
 ### Register
 # @name register
@@ -8,9 +8,9 @@ Content-Type: application/json
 Accept: application/json
 
 {
-    "email": "prueba2@prueba.com",
+    "email": "prueba0@prueba.com",
     "password": "Grp$4cFqas789",
-    "name": "test2"
+    "name": "test0"
 }
 
 ### Login   
@@ -45,8 +45,8 @@ Accept: application/json
 Authorization: Bearer {{token}}
 
 {
-    "SKU": "PROD008",
-    "productName": "Laptop Asus Rog",
+    "SKU": "PROD009",
+    "productName": "Laptop Asus Rog 1",
     "unitPrice": 8501.99,
     "stock": 21
 }
